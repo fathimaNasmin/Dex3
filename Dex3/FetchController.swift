@@ -4,6 +4,7 @@
 //
 //  Created by Fathima Nasmin on 12/30/24.
 //
+// Purpose: Fetching data from the api
 
 import Foundation
 
