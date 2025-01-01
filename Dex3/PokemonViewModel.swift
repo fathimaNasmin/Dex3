@@ -3,6 +3,8 @@
 //  Dex3
 //
 //  Created by Fathima Nasmin on 12/31/24.
+
+
 // Purpose: Processing the fetch pokemon and ready for the view
 // @Published: Notifies the View who observers this view model of any changes to status property will trigger for UI update.
 
