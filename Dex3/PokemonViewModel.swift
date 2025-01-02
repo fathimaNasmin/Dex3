@@ -44,7 +44,10 @@ class PokemonViewModel: ObservableObject {
 				let newPokemon = Pokemon(context: PersistenceController.shared.container.viewContext)
 				newPokemon.id = Int16(pokemon.id)
 				newPokemon.name = pokemon.name
+				
 				newPokemon.types = pokemon.types
+				newPokemon.organiseType()
+				
 				newPokemon.hp = Int16(pokemon.hp)
 				newPokemon.defense = Int16(pokemon.defense)
 				newPokemon.specialDefence = Int16(pokemon.specialDefense)

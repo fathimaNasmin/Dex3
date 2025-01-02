@@ -16,39 +16,41 @@ struct ContentView: View {
         animation: .default)
 	
     private var pokedex: FetchedResults<Pokemon>
+	
+	@StateObject private var pokemonVM = PokemonViewModel(controller: FetchController())
 
     var body: some View {
-        NavigationStack {
-			List(pokedex) { pokemon in
-				NavigationLink(value: pokemon) {
-					AsyncImage(url: pokemon.sprite) { image in
-						image.resizable()
-							.scaledToFit()
-					} placeholder: {
-						ProgressView()
+		switch pokemonVM.status {
+		case .success:
+			NavigationStack {
+				List(pokedex) { pokemon in
+					NavigationLink(value: pokemon) {
+						AsyncImage(url: pokemon.sprite) { image in
+							image.resizable()
+								.scaledToFit()
+						} placeholder: {
+							ProgressView()
+						}
+						.frame(width: 100, height: 100)
+						
+						
+						Text(pokemon.name!.capitalized)
 					}
-					.frame(width: 100, height: 100)
-
-					
-					Text(pokemon.name!.capitalized)
+				}
+				.navigationTitle("Pokedox")
+				.navigationDestination(for: Pokemon.self) { pokemon in
+					PokemonDetail()
+						.environmentObject(pokemon)
+				}
+				.toolbar{
+					ToolbarItem(placement: .topBarTrailing) {
+						EditButton()
+					}
 				}
 			}
-			.navigationTitle("Pokedox")
-			.navigationDestination(for: Pokemon.self) { pokemon in
-				AsyncImage(url: pokemon.sprite) { image in
-					image.resizable()
-						.scaledToFit()
-				} placeholder: {
-					ProgressView()
-				}
-				.frame(width: 200, height: 200)
-			}
-			.toolbar{
-				ToolbarItem(placement: .topBarTrailing) {
-					EditButton()
-				}
-			}
-        }
+		default:
+			ProgressView()
+		}
     }
 
 }
