@@ -3,6 +3,10 @@
 //  Dex3
 //
 //  Created by Fathima Nasmin on 12/29/24.
+
+//  The @FetchRequest property wrapper allows SwiftUI to observe changes to the fetched data and automatically update the view when the data changes.
+
+// Declares a property that automatically fetches data from a Core Data store based on specified criteria.
 //
 
 import SwiftUI
@@ -10,7 +14,7 @@ import CoreData
 
 struct ContentView: View {
     @FetchRequest(
-		sortDescriptors: [NSSortDescriptor(keyPath: \Pokemon.id, ascending: true)],
+		sortDescriptors: [NSSortDescriptor(keyPath: \Pokemon.id, ascending: true)], // specifies how the fetched data should be sorted.
         animation: .default) private var pokedex: FetchedResults<Pokemon>
 	
 	@FetchRequest(
