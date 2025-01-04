@@ -8,7 +8,7 @@ Dex3 is a lightweight iOS app showcasing Pokémon characters from the 1st, 2nd, 
 3. [Requirements](#requirements)
 4. [Installation](#installation)
 5. [Architecture](#architecture)
-6. [Key tools and Framework](#keytoolsandframework)
+6. [Key tools and Framework](#key-tools-and-framework)
 
 
 ## Features
