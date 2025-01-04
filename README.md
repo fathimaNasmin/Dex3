@@ -18,11 +18,11 @@ Dex3 is a lightweight iOS app showcasing Pokémon characters from the 1st, 2nd, 
 - Offline persistence with Core Data.
 
 ## Demo
-![Dex3HomeScreen](https://github.com/user-attachments/assets/2e657966-4f66-4b3b-a2fe-c2f4a3536009)
-
-![Dex3HomeScreen](AppScreenshots/Dex3HomeScreen.png)
-
-<img src="AppScreenshots/Dex3HomeScreen.png" width="200" />
+<img src="AppScreenshots/Dex3HomeScreen.png" width="300" />
+<img src="AppScreenshots/Dex3DetailScreen.png" width="200" />
+<img src="AppScreenshots/Dex3SwiftCharts.png" width="200" />
+<img src="AppScreenshots/Dex3Favorites.png" width="200" />
+<img src="AppScreenshots/Dex3Widgets.png" width="200" />
 
 
 
