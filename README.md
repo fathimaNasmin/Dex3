@@ -7,7 +7,8 @@ Dex3 is a lightweight iOS app showcasing Pokémon characters from the 1st, 2nd, 
 2. [Demo](#demo)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
-5.  [Architecture](#architecture) 
+5. [Architecture](#architecture)
+6. [Key tools and Framework](#keytoolsandframework)
 
 
 ## Features
@@ -18,12 +19,12 @@ Dex3 is a lightweight iOS app showcasing Pokémon characters from the 1st, 2nd, 
 - Offline persistence with Core Data.
 
 ## Demo
-<p align="center">
-  <img src="AppScreenshots/Dex3HomeScreen.png" width="200" />
-  <img src="AppScreenshots/Dex3DetailScreen.png" width="200" />
-  <img src="AppScreenshots/Dex3SwiftCharts.png" width="200" />
-  <img src="AppScreenshots/Dex3Favorites.png" width="200" />
-  <img src="AppScreenshots/Dex3Widgets.png" width="200" />
+<p align="left">
+  <img src="AppScreenshots/Dex3HomeScreen.png" width="200" />&nbsp;&nbsp;
+  <img src="AppScreenshots/Dex3DetailScreen.png" width="200" />&nbsp;&nbsp;
+  <img src="AppScreenshots/Dex3SwiftCharts.png" width="200" />&nbsp;&nbsp;
+  <img src="AppScreenshots/Dex3Favorites.png" width="200" />&nbsp;&nbsp;
+  <img src="AppScreenshots/Dex3Widgets.png" width="200" />&nbsp;&nbsp;
 </p>
 
 
@@ -34,13 +35,11 @@ Dex3 is a lightweight iOS app showcasing Pokémon characters from the 1st, 2nd, 
 - iOS 16.0 or later
 - Swift 6
 
-  ## Installation
+## Installation
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/fathima-nasmin/Dex3.git
-
-   cd Dex3  
+   git clone [https://github.com/fathima-nasmin/Dex3.git](https://github.com/fathimaNasmin/Dex3.git)
    open Dex3.xcodeproj
 
 2. Build and run the app on a simulator or connected device.
